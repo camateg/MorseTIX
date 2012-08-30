@@ -46,24 +46,33 @@ char morseLib[100][6] = {
                    };
 
 
-MorseTIX::MorseTIX(byte pin, byte duration, byte freq)
+MorseTIX::MorseTIX(byte pin, byte duration, byte freq, char mode)
 {
 	pinMode(pin,OUTPUT);
 	pinMode(LED_OUT, OUTPUT);
 	_pin = pin;
 	_duration = duration;
 	_freq = freq;
+	_mode = mode;
 }
 
 void MorseTIX::on()
 {
-	analogWrite(_pin, _freq);
+	if(_mode == 'a') {
+		analogWrite(_pin, _freq);
+	} else {
+		digitalWrite(_pin, HIGH);
+	}
 	digitalWrite(LED_OUT, HIGH);
 }
 
 void MorseTIX::off()
 {
-	analogWrite(_pin, 0);
+	if(_mode == 'a') {
+		analogWrite(_pin, _freq);
+	} else {
+		digitalWrite(_pin, HIGH);
+	}
 	digitalWrite(LED_OUT, LOW);
 }
 

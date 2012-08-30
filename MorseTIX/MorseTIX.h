@@ -5,7 +5,7 @@
 
 class MorseTIX {
 public:
-	MorseTIX(byte pin, byte duration, byte freq);
+	MorseTIX(byte pin, byte duration, byte freq, char mode);
 	~MorseTIX();
 	void dit();
 	void dah();
@@ -20,6 +20,7 @@ private:
 	byte _pin;
 	byte _duration;
 	byte _freq;
+	char _mode;
 };
 
 #endif

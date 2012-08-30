@@ -1,6 +1,6 @@
 #include <MorseTIX.h>
 
-MorseTIX morse(9,65,120);
+MorseTIX morse(9,65,120,'d');
 
 void setup(){
   Serial.begin(9600);

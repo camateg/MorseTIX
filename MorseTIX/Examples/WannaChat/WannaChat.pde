@@ -1,6 +1,6 @@
 #include <MorseTIX.h>
 
-MorseTIX morse(9,60,100);
+MorseTIX morse(9,60,100,'d');
 
 void setup(){}
 
