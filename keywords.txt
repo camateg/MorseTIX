@@ -1,0 +1,6 @@
+MorseTIX	KEYWORD1
+
+dit		KEYWORD2
+dah		KEYWORD2
+pause		KEYWORD2
+send		KEYWORD2
