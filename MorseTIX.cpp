@@ -3,7 +3,7 @@
 
 #define LED_OUT 13
 
-char morseLib[100][6] = {
+char morseLib[48][6] = {
                         { 1,2,0,0,0,0 }, //a
                         { 2,1,1,1,0,0 }, //b
                         { 2,1,2,1,0,0 }, //c
