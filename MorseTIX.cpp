@@ -71,7 +71,7 @@ void MorseTIX::off()
 	if(_mode == 'a') {
 		analogWrite(_pin, _freq);
 	} else {
-		digitalWrite(_pin, HIGH);
+		digitalWrite(_pin, LOW);
 	}
 	digitalWrite(LED_OUT, LOW);
 }
