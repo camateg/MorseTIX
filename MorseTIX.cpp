@@ -59,7 +59,7 @@ MorseTIX::MorseTIX(byte pin, byte duration, byte freq, char mode)
 void MorseTIX::on()
 {
 	if(_mode == 'a') {
-		analogWrite(_pin, _freq);
+		analogWrite(_pin, 0);
 	} else {
 		digitalWrite(_pin, HIGH);
 	}
