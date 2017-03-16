@@ -105,7 +105,7 @@ void MorseTIX::pause(int s)
 {
 	delay(s * 1000);
 }
-void MorseTIX::send(char *t)
+void MorseTIX::send(char* t)
 {
         int x;
         byte y;

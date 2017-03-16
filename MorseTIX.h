@@ -9,7 +9,7 @@ public:
 	~MorseTIX();
 	void dit();
 	void dah();
-	void send(char *stringToSend);
+	void send(char* stringToSend);
 	void pause(int s);
 
 private:
